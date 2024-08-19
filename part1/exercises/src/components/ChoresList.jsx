@@ -1,3 +1,11 @@
 export default function ChoresList () {
-   return <p>No content is here!</p>;
+   return (
+      <div><p>I dont do chores</p>
+      <ol>
+         <li>Clean</li>
+         <li>cook</li>
+      </ol>
+      </div>
+   
+   );
 }
