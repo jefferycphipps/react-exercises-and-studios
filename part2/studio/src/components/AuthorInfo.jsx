@@ -2,7 +2,7 @@ import recipedata from './recipe.json'
 
 function AuthorInfo() {
   const recipeAuthor = <div>{recipedata[0].author}</div>;
-  const recipeAuthorImage = <div><img src={recipedata[0].authorImage} /></div>;
+  const recipeAuthorImage = <div><img src={recipedata[0].authorImage}  className='authorImage'/></div>;
   const recipeWebsite = <a href={recipedata[0].website}>Website</a>;
   
   return(
