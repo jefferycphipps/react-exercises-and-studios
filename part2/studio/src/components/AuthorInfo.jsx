@@ -1,5 +1,17 @@
+import recipedata from './recipe.json'
+
 function AuthorInfo() {
-   return;
+  const recipeAuthor = <div>{recipedata[0].author}</div>;
+  const recipeAuthorImage = <div><img src={recipedata[0].authorImage} /></div>;
+  const recipeWebsite = <a href={recipedata[0].website}>Website</a>;
+  
+  return(
+    <div>
+      {recipeAuthorImage}
+      {recipeAuthor}
+      {recipeWebsite}
+    </div>
+   );
  }
  
  export default AuthorInfo;
